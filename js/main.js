@@ -25,14 +25,14 @@ const App = {
 
       let next = markov.next()
       let last = markov.history[markov.history.length - 2]
-      if(!next.match(/^([.?!,@:;")]|'s|n't|'re|'ve)$/) && (last && !last.match(/[`(@$]/))){
+      if(!next.match(/^([.?!,@:;"%)]|'s|n't|'re|'ve)$/) && (last && !last.match(/[`(@$]/))){
         this.text += ' '
       }
 
       if(this.under){
         this.under--
         this.text += next
-        if(!this.under || next.match(/^[.?!,@:;")]$/)){
+        if(!this.under || next.match(/^[.?!,@:;"%)]$/)){
           this.under = 0
           this.text += '</u>'
         }
