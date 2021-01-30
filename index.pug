@@ -3,11 +3,23 @@ html
   head
     meta(charset='utf-8')
     title INFINITE GENE RAY
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css')
     link(rel='stylesheet' href='./css/style.css')
 
   body
     #app
-      p {{text}}
+      .container(v-cloak)
+        .row
+          .four.columns
+            img.u-full-width(src='./media/rotate.gif')
+          .eight.columns
+            h1 INFINITE GENE RAY
+            h3 REINTERPRETATION OF
+            h3 NATURE'S HARMONIC
+            h3 SIMULTANEOUS 4-DAY
+            h1 TIME CUBE
+        hr
+        p {{text}}
 
     script(src='https://unpkg.com/vue@next')
     script(type='module' src='./js/main.js')
