@@ -13,13 +13,13 @@ html
           .four.columns
             img.u-full-width(src='./media/rotate.gif')
           .eight.columns
-            h1 INFINITE GENE RAY
+            h1: a(href='https://github.com/molarmanful/infinite-gene-ray' target='_blank') INFINITE GENE RAY
             h3 REINTERPRETATION OF
             h3 NATURE'S HARMONIC
             h3 SIMULTANEOUS 4-DAY
-            h1 TIME CUBE
+            h1: a(href='https://timecube.2enp.com' target='_blank') TIME CUBE
         hr
-        p {{text}}
+        .content(v-html='text')
 
     script(src='https://unpkg.com/vue@next')
     script(type='module' src='./js/main.js')
