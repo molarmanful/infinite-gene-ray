@@ -20,7 +20,7 @@ const App = {
       // Also generates new styles
       if(!this.sect){
         this.sect = this.randInt(5, 11)
-        this.text += `<p class='size${this.randBias('size', 0, 3, .25)} color${this.randBias('color', 0, 9)} style${this.randBias('style', 0, 2, .25)}'>`
+        this.text += `<p class='size${this.randBias(0, 3, .25)} color${this.randBias(0, 9)} style${this.randBias(0, 2, .25)}'>`
       }
 
       let next = markov.next()
@@ -64,7 +64,7 @@ const App = {
       return Math.random() * (b - a + 1) | 0 + a
     },
 
-    randBias(p, a, b, x = .5){
+    randBias(a, b, x = .5){
       return Math.random() > x ? this.randInt(a, b) : 0
     }
   }
