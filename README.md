@@ -64,9 +64,13 @@ E.g.: a c d b c ...
 As with most Markov chain-based text projects, the generated content can be somewhat hit-or-miss. But when the algorithm hits, it most definitely hits hard. Some noteworthy quotes:
 
 > Media will eat dung before a Time Cube.
+
 > Students are really stupid, and she said it was "nutty" and ignore the Time Cube.
+
 > Adult word god is but an evil scam that crucifies children.
+
 > One day, vines will cover New York like old Trojan Horse filled with deadly deception.
+
 > Explain the physics of Santa Claus.
 
 The odd beauty about this project is that oftentimes, the generated content is as unintelligible as the original content.
